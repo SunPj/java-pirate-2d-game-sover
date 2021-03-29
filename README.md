@@ -11,13 +11,13 @@ The inputs are:
 
 Given
  	- the pirot can move only up and right 
- 	- the amount of treasure he collects is the sum of coins all the way pirot get to the destination point
+ 	- the amount of treasure he collects is the sum of coins all the way pirate get to the destination point
 
 Expected output is an either an object representing a path and amount of treasure pirot has collected or an error denoting that the target position is out of reach.
  	 
 Step 1. A map consists of only coins where each point can contain specific amount.
 	
-Step 2. Assume we need to adapt this solver to an updated game where new items have been introduced. So instead of coins the map can make up of rocks wich pirot can't get accross and bombs which pirot can use to blew up rocks on his way. 
+Step 2. Assume we need to adapt this solver to an updated game where new items have been introduced. So instead of coins the map can make up of rocks wich pirate can't get accross and the bombs which pirate can use to blew up rocks on his way. 
 
 ### Task description:
 	
@@ -33,12 +33,12 @@ Delivery:
 
 ## Some test cases
 
-### Example collects 57 conins (12, 13, 14, 11, 7)
+### Example when pirate collects 57 conins (12, 13, 14, 11, 7)
 
 ![Example1](/example_1.png?raw=true)
 
 
-
+##### Load the map
  `POST /map`
  
  ```json
@@ -50,6 +50,8 @@ Delivery:
 ]
  ```
 
+##### Run solver assuming pirate is on the left bottom corner of the map (X:0, Y:0) and destination point is the right upper corner (X:3, Y:3)
+
 `GET /findPath?=startXPosition=0&startYPosition=0&targetXPosition=3&startYPosition=3`
 
 HTTP Responce Ok
@@ -59,7 +61,7 @@ HTTP Responce Ok
 ```
   
 
-### Pirate can't reach the destination point
+### Example when pirate can't reach the destination point
 
 ![Example2](/example-2.png?raw=true)
 
@@ -78,7 +80,7 @@ HTTP Responce Ok
   `HTTP Responce NotFound`
   
 
-### Pirate collects 116 conins (9 + 8 + 99) (has to blew up 1 rock on his way) 
+### Example when pirate collects 116 conins (9 + 8 + 99) (has to blew up 1 rock on his way) 
 
 ![Example3](/example-3.png?raw=true)
 
