@@ -27,9 +27,9 @@ Requirements
   
 Delivery: 
  1. We expect candidates to provide us with a github link to a repository which has a guidence of how to run and test the code in a docker container.
- 2. Application run on container should expose REST API with methods to 
- 	- load the map
- 	- calculate pirate's path
+ 2. Application run on a container should expose a REST API with methods to 
+  - load the map
+  - calculate pirate's path
 
 ## Some test cases
 
