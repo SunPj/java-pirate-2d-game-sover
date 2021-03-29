@@ -13,7 +13,7 @@ Given
  - the piratе can move only up and right 
  - the amount of treasure he collects is the sum of coins all the way pirate get to the destination point
 
-Expected output is an either an object representing a path and amount of treasure pirot has collected or an error denoting that the target position is out of reach.
+Expected output is an either an object representing a path and an amount of treasure pirot has collected or an error denoting that the target position is out of reach.
  	 
 Step 1. A map consists of only coins where each point can contain specific amount.
 	
