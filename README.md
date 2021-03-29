@@ -2,7 +2,7 @@
 
 ### Motivation:
 
-We would like you to implement a solver for a simple 2D game to help a pirate to get to target destination collecting as much treasure as possible.
+We would like you to implement a solver for a simple 2D game to help a pirate to get to a target destination collecting as much treasure as possible.
 
 The inputs are: 
  - 2 dimensional map 
@@ -10,8 +10,8 @@ The inputs are:
  - destination position pirate should get to
 
 Given
- 	- the pirot can move only up and right 
- 	- the amount of treasure he collects is the sum of coins all the way pirate get to the destination point
+ - the piratе can move only up and right 
+ - the amount of treasure he collects is the sum of coins all the way pirate get to the destination point
 
 Expected output is an either an object representing a path and amount of treasure pirot has collected or an error denoting that the target position is out of reach.
  	 
