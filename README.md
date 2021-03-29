@@ -17,7 +17,7 @@ Expected output is an either an object representing a path and an amount of trea
  	 
 Step 1. A map consists of only coins where each point can contain specific amount.
 	
-Step 2. Assume we need to adapt this solver to an updated game where new items have been introduced. So instead of coins the map can make up of rocks wich pirate can't get accross and the bombs which pirate can use to blew up rocks on his way. 
+Step 2. Assume we need to adapt this solver to an updated game where new items have been introduced. So instead of coins the map can make up of rocks which pirate can't get accross and the bombs which pirate can use to blew up rocks on his way. 
 
 ### Task description:
 	
