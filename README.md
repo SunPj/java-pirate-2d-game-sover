@@ -33,7 +33,7 @@ Delivery:
 
 ## Some test cases
 
-### Example when pirate collects 57 conins (12, 13, 14, 11, 7)
+### Example when pirate collects 57 coins (12, 13, 14, 11, 7)
 
 ![Example1](/example_1.png?raw=true)
 
@@ -80,7 +80,7 @@ HTTP Responce Ok
   `HTTP Responce NotFound`
   
 
-### Example when pirate collects 116 conins (9 + 8 + 99) (has to blew up 1 rock on his way) 
+### Example when pirate collects 116 coins (9 + 8 + 99) (has to blew up 1 rock on his way) 
 
 ![Example3](/example-3.png?raw=true)
 
