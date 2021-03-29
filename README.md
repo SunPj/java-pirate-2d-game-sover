@@ -35,15 +35,19 @@ Delivery:
 
 ### Example collects 57 conins (12, 13, 14, 11, 7)
 
+![Example1](/example_1.png?raw=true)
+
+
+
  `POST /map`
  
  ```json
  [
-  	[{type: "coin", "amount": 1}, {type: "coin", "amount": 2}, {type: "coin", "amount": 3}, {type: "coin", "amount": 0}],
-	[{type: "coin", "amount": 4}, {type: "coin", "amount": 5}, {type: "coin", "amount": 6}, {type: "coin", "amount": 7}],
-	[{type: "coin", "amount": 8}, {type: "coin", "amount": 9}, {type: "coin", "amount": 10}, {type: "coin", "amount": 11}],
-	[{type: "coin", "amount": 0}, {type: "coin", "amount": 12}, {type: "coin", "amount": 13}, {type: "coin", "amount": 14}]
- ]
+    [{"type": "coin", "amount": 1}, {"type": "coin", "amount": 2}, {"type": "coin", "amount": 3}, {"type": "coin", "amount": 0}],
+    [{"type": "coin", "amount": 4}, {"type": "coin", "amount": 5}, {"type": "coin", "amount": 6}, {"type": "coin", "amount": 7}],
+    [{"type": "coin", "amount": 8}, {"type": "coin", "amount": 9}, {"type": "coin", "amount": 10}, {"type": "coin", "amount": 11}],
+    [{"type": "coin", "amount": 0}, {"type": "coin", "amount": 12}, {"type": "coin", "amount": 13}, {"type": "coin", "amount": 14}]
+]
  ```
 
 `GET /findPath?=startXPosition=0&startYPosition=0&targetXPosition=3&startYPosition=3`
@@ -56,14 +60,17 @@ HTTP Responce Ok
   
 
 ### Pirate can't reach the destination point
+
+![Example2](/example-2.png?raw=true)
+
  `POST /map`
  
  ```json
  [
-  	[{type: "coin", "amount": 1}, {type: "coin", "amount": 2}, {type: "coin", "amount": 3}, {type: "coin", "amount": 4}],
-	[{type: "coin", "amount": 5}, {type: "coin", "amount": 6}, {type: "coin", "amount": 7}, {type: "coin", "amount": 8}],
-	[{type: "coin", "amount": 9}, {type: "coin", "amount": 10}, {type: "coin", "amount": 11}, {type: "coin", "amount": 12}],
-	[{type: "coin", "amount": 13}, {type: "coin", "amount": 14}, {type: "coin", "amount": 15}, {type: "coin", "amount": 16}]
+    [{"type": "coin", "amount": 1}, {"type": "coin", "amount": 2}, {"type": "coin", "amount": 3}, {"type": "coin", "amount": 4}],
+    [{"type": "coin", "amount": 5}, {"type": "coin", "amount": 6}, {"type": "coin", "amount": 7}, {"type": "coin", "amount": 8}],
+    [{"type": "coin", "amount": 9}, {"type": "coin", "amount": 10}, {"type": "coin", "amount": 11}, {"type": "coin", "amount": 12}],
+    [{"type": "coin", "amount": 13}, {"type": "coin", "amount": 14}, {"type": "coin", "amount": 15}, {"type": "coin", "amount": 16}]
  ]
  ```
 
@@ -73,14 +80,16 @@ HTTP Responce Ok
 
 ### Pirate collects 116 conins (9 + 8 + 99) (has to blew up 1 rock on his way) 
 
+![Example3](/example-3.png?raw=true)
+
  `POST /map`
  
  ```json
  [
-  	[{type: "coin", "amount": 10}, {type: "coin", "amount": 11}, {type: "coin", "amount": 21}, {type: "coin", "amount": 0}],
-	[{type: "coin", "amount": 9}, {type: "coin", "amount": 8}, {type: "rock"}, {type: "coin", "amount": 99}],
-	[{type: "coin", "amount": 6}, {type: "bomb"}, {type: "rock"}, {type: "rock"}],
-	[{type: "coin", "amount": 0}, {type: "coin", "amount": 9}, {type: "coin", "amount": 9}, {type: "coin", "amount": 9}]
+ [{"type": "coin", "amount": 10}, {"type": "coin", "amount": 11}, {"type": "coin", "amount": 21}, {"type": "coin", "amount": 0}],
+    [{"type": "coin", "amount": 9}, {"type": "coin", "amount": 8}, {"type": "rock"}, {"type": "coin", "amount": 99}],
+    [{"type": "coin", "amount": 6}, {"type": "bomb"}, {"type": "rock"}, {"type": "rock"}],
+    [{"type": "coin", "amount": 0}, {"type": "coin", "amount": 9}, {"type": "coin", "amount": 9}, {"type": "coin", "amount": 9}]
  ]
  ```
 
