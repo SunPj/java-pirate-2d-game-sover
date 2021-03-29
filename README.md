@@ -1,4 +1,4 @@
-# Java pirate 2d game sover interview task
+# Java pirate 2D game solver interview task
 
 ### Motivation:
 
