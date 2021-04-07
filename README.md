@@ -52,7 +52,7 @@ Delivery:
 
 ##### Run solver assuming pirate is on the left bottom corner of the map (X:0, Y:0) and destination point is the right upper corner (X:3, Y:3)
 
-`GET /findPath?=startXPosition=0&startYPosition=0&targetXPosition=3&startYPosition=3`
+`GET /findPath?startXPosition=0&startYPosition=0&targetXPosition=3&targetYPosition=3`
 
 HTTP Responce Ok
 
@@ -76,7 +76,7 @@ HTTP Responce Ok
  ]
  ```
 
-  `GET /findPath?=startXPosition=2&startYPosition=3&targetXPosition=0&startYPosition=1`
+  `GET /findPath?startXPosition=2&startYPosition=3&targetXPosition=0&targetYPosition=1`
   `HTTP Responce NotFound`
   
 
@@ -95,7 +95,7 @@ HTTP Responce Ok
  ]
  ```
 
-`GET /findPath?=startXPosition=0&startYPosition=0&targetXPosition=3&startYPosition=3`
+`GET /findPath?startXPosition=0&startYPosition=0&targetXPosition=3&targetYPosition=3`
 
 HTTP Responce Ok
 
