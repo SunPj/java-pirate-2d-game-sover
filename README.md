@@ -102,3 +102,24 @@ HTTP Responce Ok
 ```
 {"path": [[0, 0], [1, 0], [1, 1], [1, 2], [2, 2], [3, 2], [3, 3]], "coins": 116}
 ```
+
+### More complicated example
+
+`Post /map`
+
+```json
+[
+   [{"type": "coin", "amount": 1}, {"type": "coin", "amount": 5}, {"type": "coin", "amount": 6}, {"type": "coin", "amount": 7}, {"type": "coin", "amount": 8}, {"type": "coin", "amount": 9}],
+   [{"type": "coin", "amount": 2}, {"type": "coin", "amount": 40}, {"type": "coin", "amount": 9}, {"type": "coin", "amount": 8}, {"type": "coin", "amount": 10}, {"type": "coin", "amount": 0}],
+   [{"type": "coin", "amount": 3}, {"type": "coin", "amount": 1}, {"type": "coin", "amount": 2}, {"type": "coin", "amount": 8}, {"type": "coin", "amount": 9}, {"type": "coin", "amount": 11}],
+   [{"type": "coin", "amount": 4}, {"type": "coin", "amount": 0}, {"type": "coin", "amount": 6}, {"type": "coin", "amount": 7}, {"type": "coin", "amount": 8}, {"type": "coin", "amount": 10}],
+   [{"type": "coin", "amount": 5}, {"type": "coin", "amount": 6}, {"type": "coin", "amount": 8}, {"type": "coin", "amount": 9}, {"type": "coin", "amount": 10}, {"type": "coin", "amount": 11}]
+]
+```
+HTTP Responce Ok
+
+`GET /findPath?startXPosition=1&startYPosition=1&targetXPosition=5&targetYPosition=3`
+
+```
+{"path": [[1, 1], [1, 2], [1, 3], [2, 3], [3, 3], [4, 3], [5, 3]], "coins": 68}
+```
